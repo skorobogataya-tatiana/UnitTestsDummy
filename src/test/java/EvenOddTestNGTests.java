@@ -1,16 +1,16 @@
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.*;
+import static org.testng.Assert.*;
 
 public class EvenOddTestNGTests {
 
     @Test
     public void checkEvenNumber() {
-        assertTrue("The inputted number is not even", EvenOddChecker.check(8));
+        assertTrue(EvenOddChecker.check(8), "The inputted number is not even");
     }
 
     @Test
     public void checkOddNumber() {
-        assertFalse("The inputted number is not odd", EvenOddChecker.check(11));
+        assertFalse(EvenOddChecker.check(11), "The inputted number is not odd");
     }
 }
