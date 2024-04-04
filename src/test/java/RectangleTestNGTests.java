@@ -1,25 +1,25 @@
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.Assert.*;
 
 public class RectangleTestNGTests {
     @Test
     public void checkAreaWithInitialSize() {
         Rectangle rectangle = new Rectangle(5.7, 8.2);
-        assertEquals("Area value is not correctly calculated", 46.74, rectangle.getArea(), 0.001);
+        assertEquals(rectangle.getArea(), 46.74, 0.001, "Area value is not correctly calculated");
     }
 
     @Test
     public void checkGetterSetterForWidth() {
         Rectangle rectangle = new Rectangle(5.7, 8.2);
         rectangle.setWidth(9.0);
-        assertEquals("Width value is not correctly set", 9.0, rectangle.getWidth(), 0.001);
+        assertEquals(rectangle.getWidth(), 9.0, 0.001, "Width value is not correctly set");
     }
 
     @Test
     public void checkGetterSetterForLength() {
         Rectangle rectangle = new Rectangle(5.7, 8.2);
         rectangle.setLength(6.2);
-        assertEquals("Length value is not correctly set", 6.2, rectangle.getLength(), 0.001);
+        assertEquals(rectangle.getLength(), 6.2, 0.001, "Length value is not correctly set");
     }
 }

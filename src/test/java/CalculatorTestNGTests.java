@@ -1,30 +1,30 @@
 import org.testng.annotations.*;
 
-import static org.testng.AssertJUnit.*;
+import static org.testng.Assert.*;
 
 public class CalculatorTestNGTests {
 
     @Test
     public void testSum() {
         Calculator calculator = new Calculator();
-        assertEquals("The sum result is wrong", 15, calculator.add(10, 5));
+        assertEquals(calculator.add(10, 5), 15, "The sum result is wrong");
     }
 
     @Test
     public void testSubtract() {
         Calculator calculator = new Calculator();
-        assertEquals("The subtract result is wrong", 10, calculator.subtract(15, 5));
+        assertEquals(calculator.subtract(15, 5), 10, "The subtract result is wrong");
     }
 
     @Test
     public void testMultiply() {
         Calculator calculator = new Calculator();
-        assertEquals("The multiply result is wrong", 20, calculator.multiply(5, 4));
+        assertEquals(calculator.multiply(5, 4), 20, "The multiply result is wrong");
     }
 
     @Test
     public void testDivide() {
         Calculator calculator = new Calculator();
-        assertEquals("The divide result is wrong", 3, calculator.divide(18, 6));
+        assertEquals(calculator.divide(18, 6), 3, "The divide result is wrong");
     }
 }
