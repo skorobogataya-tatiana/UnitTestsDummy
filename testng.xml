@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="Test1">
+        <classes>
+            <class name="CalculatorTestNGTests"/>
+            <class name="EvenOddTestNGTests"/>
+            <class name="RectangleTestNGTests"/>
+        </classes>
+    </test>
+</suite>

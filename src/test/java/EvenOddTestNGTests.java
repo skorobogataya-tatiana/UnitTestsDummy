@@ -6,11 +6,11 @@ public class EvenOddTestNGTests {
 
     @Test
     public void checkEvenNumber() {
-        assertTrue(EvenOddChecker.check(8), "The inputted number is not even");
+        assertTrue(EvenOddChecker.check(8), "The inputted number 8 is not even");
     }
 
     @Test
     public void checkOddNumber() {
-        assertFalse(EvenOddChecker.check(11), "The inputted number is not odd");
+        assertFalse(EvenOddChecker.check(11), "The inputted number 11 is not odd");
     }
 }
